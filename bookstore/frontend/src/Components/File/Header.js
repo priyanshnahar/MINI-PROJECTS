@@ -9,19 +9,21 @@ function Header() {
     <div>
       <AppBar position="sticky" sx={{ backgroundColor: "#8a2be2" }}>
         <Toolbar>
+        <NavLink to="/" style={{ color: "white" }}>
           <Typography>
             <MenuBookIcon/>
           </Typography>
+          </NavLink>
           <Tabs
             sx={{ ml: "auto" }}
             textColor="inherit"
-            indicatorColor="secondary"
+            indicatorColor="primary"
             value={value}
             onChange={(e, val) => setValue(val)}
           >
-            <Tab LinkComponent={NavLink} label="Add Book" to="/add" />
-            <Tab LinkComponent={NavLink} label="Books" to="/books" />
-            <Tab LinkComponent={NavLink} label="About Us" to="/about" />
+            <Tab LinkComponent={NavLink} to="/add" label="Add product" />
+            <Tab LinkComponent={NavLink} to="/books" label="Books" />
+            <Tab LinkComponent={NavLink} to="/about" label="About Us" />
           </Tabs>
         </Toolbar>
       </AppBar>
