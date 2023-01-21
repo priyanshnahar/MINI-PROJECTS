@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e2e1e0;
+  text-align: center;
+}
+
+.box {
+  background: rgb(13, 120, 201);
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 12rem;
+  position: relative;
+  width: 300px;
+}
+
+.box {
+  box-shadow: 0 1px 3px rgba(33, 9, 214, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.box:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
